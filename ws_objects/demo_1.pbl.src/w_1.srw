@@ -2,7 +2,7 @@
 forward
 global type w_1 from window
 end type
-type cb_1 from commandbutton within w_1
+type cb_2 from commandbutton within w_1
 end type
 end forward
 
@@ -18,20 +18,20 @@ boolean resizable = true
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
-cb_1 cb_1
+cb_2 cb_2
 end type
 global w_1 w_1
 
 on w_1.create
-this.cb_1=create cb_1
-this.Control[]={this.cb_1}
+this.cb_2=create cb_2
+this.Control[]={this.cb_2}
 end on
 
 on w_1.destroy
-destroy(this.cb_1)
+destroy(this.cb_2)
 end on
 
-type cb_1 from commandbutton within w_1
+type cb_2 from commandbutton within w_1
 integer x = 105
 integer y = 12
 integer width = 402
